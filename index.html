@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EHT Gear Optimizer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <header>
+    <h1>EHT Gear Optimizer</h1>
+    <p>Input your gear stats → generate a shareable infographic</p>
+  </header>
+
+  <main>
+    <nav>
+      <button id="builderBtn">Builder</button>
+      <button id="infographicBtn">Infographic</button>
+    </nav>
+
+    <section id="builder">
+      <h2>Gear Builder</h2>
+      <p>Enter your hunter’s gear stats here:</p>
+      <div id="gearForm"></div>
+      <button id="buildBtn">Build Infographic</button>
+      <button id="resetBtn">Reset</button>
+    </section>
+
+    <section id="infographic" class="hidden">
+      <h2>Infographic</h2>
+      <canvas id="infographicCanvas"></canvas>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
